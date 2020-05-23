@@ -1,0 +1,15 @@
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### Eclipse ###
+/bin/
+.project
+.classpath
+/.settings/
+
+### VSCode ###
+/.history/
+/.VSCode/
