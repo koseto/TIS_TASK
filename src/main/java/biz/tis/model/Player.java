@@ -1,6 +1,7 @@
 package main.java.biz.tis.model;
 
 public class Player {
+
     private String name;
     private Integer score;
 

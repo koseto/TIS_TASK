@@ -41,7 +41,10 @@ public class HighScoreResults {
                 scoreMap.put(nameOfTheSecondPlayer, new ArrayList<>());
             }
             scoreMap.get(nameOfTheSecondPlayer)
-                .add(new Player(nameOfTheFirstPlayer, scoreOfTheSecondPlayer - scoreOfTheFirstPlayer));
+                .add(new Player(
+                    nameOfTheFirstPlayer,
+                    scoreOfTheSecondPlayer - scoreOfTheFirstPlayer
+                ));
 
             line = input.nextLine();
         }
@@ -57,7 +60,8 @@ public class HighScoreResults {
             System.out.printf("%n%s - (%d)%n", player.getName(), player.getScore());
 
             scoreMap.get(player.getName())
-                .forEach(opponent -> System.out.printf("*   %s <-> %d%n", opponent.getName(), opponent.getScore()));
+                .forEach(opponent ->
+                    System.out.printf("*   %s <-> %d%n", opponent.getName(), opponent.getScore()));
         });
 
         input.close();
